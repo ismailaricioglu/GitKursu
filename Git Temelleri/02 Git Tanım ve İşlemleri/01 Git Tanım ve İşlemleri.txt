@@ -1,0 +1,13 @@
+Tanımlar :
+Git.............................................:	Versiyon kontrol sistemi.
+GitHub..........................................:	Portal, web sitesi. Gti repolarını, git projelerini içerisinde saklayan bir portal.
+
+Commit (adama)..................................:	Projede tamamlanmış parça kayıt noktası. Bir nevi kaydetme (saved) gibi.
+Branch (dallanma)...............................:	Projede paralel devam ettirilen işlemlerin genel adıdır.
+Birleştirme.....................................:	(branch) paralel işlerin birleştirilmesi
+
+İşlemler :
+	Genel işlem adımları : 
+	- Çalışma Klasörü.......................:	Gerçek zamanlı çalışma alanı
+	- Index-Staging.........................:	"git add" komut işlemi. Çalışmaların arafta tutulduğu yer.
+	- Local Repository......................:	"git commit" komut işlemi. Çalışmaların canlıya çıktığı yer. "Saved" kayıt altına alındığı ve kontrol noktasının oluşturulduğu yer.
