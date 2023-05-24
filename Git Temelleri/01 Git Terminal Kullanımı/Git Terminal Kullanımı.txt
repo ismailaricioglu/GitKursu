@@ -5,8 +5,10 @@ Git Terminal Kullanımı :
 - [git].........................................:	komut ve yardım bilgi listesi
 - [git --verion]................................:	versiyon bilgisi verir
 
-- [clear].......................................:	ekranı temizler
-- [tab].........................................:	bir iki harf yazıldıktan sonra [tab] tuşu ile otomatik tamamlar
+- ekran.........................................:	temel ekran işlemlri
+	- [Q]...................................:	ekranda bir komut istemi çıktısı taşar ise yön tuşları ile yukarı-aşağı gidilebilir ve "Q" tuşu ile çıkılabilir
+	- [clear]...............................:	ekranı temizler
+	- [tab].................................:	bir iki harf yazıldıktan sonra [tab] tuşu ile otomatik tamamlar
 
 - [pwd] (print working directory)...............:	üzerinde bulunduğu adresi verir
 - [ls]..........................................:	üzerinde bulunduğu adresin içindeki klasör ve dokümanları listesini verir
