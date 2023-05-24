@@ -1,7 +1,9 @@
 ................................................:	
 git add (klasör ya da doküman adı)..............:	Indexleme işlemi. Klasör adı ile tüm verileri, dokuman adı ile sadece ilgili dokumanı commite hazır hale getirir
 	- [git add .]...........................:	Çoklu Indexleme işlemi. Aynı anda birden fazla dokümanı Indexlemek için
-git commit -m "açıklama metni oluşturuldu"......:	"açıklama metni oluşturuldu" ifadesini dahil ederek commit gerçekleştirildi
+git commit......................................:	Genel commitleme işlemi. Bir text editor açıp işlemi buradan gerçeklemek isteyecektir.
+	- [git commit -m "açıklama metni"]......:	Doğrudan commitleme işlemi. "açıklama metni oluşturuldu" ifadesini dahil ederek commit gerçekleştirildi
+	- [git commit -a].......................:	Doğrudan Indexleme (add) ve commitleme işlemi. Bir text editor açıp işlemi buradan gerçeklemek isteyecektir.
 git log.........................................:	LOG // İşlem gerçekleştirme bilgilerini verir.
 	- Commit................................:	commit c1cf4e3b8ecd144499afb5a4fac21a1843619aee (HEAD -> master)
 		- Hash..........................:	c1cf4e3b8ecd144499afb5a4fac21a1843619aee
