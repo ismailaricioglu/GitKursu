@@ -1,0 +1,4 @@
+Erişime kapalı (gizli) doküman..................:	Toplu [git add .] ekleme işlemlerinde indexlemek istemediğimiz dokümanlar için gerekenler
+	- [touch .gitignore]....................:	Gitin içeriğini yok sayacağı dokümanları tutan bir doküman yaratma işlemi. Git için ilgili dokümanların (gizlenmek istenen) özel durum bilgisini içerisinde barındıran bilgi verme dokümanı.
+		- .gitignore içerik.............:	İçerisine gitin indexler iken yok sayacağı dokümanların bilgileri mevcuttur. Bunu bizler yazarak belirtiyoruz.
+................................................:	
