@@ -1,0 +1,11 @@
+................................................:	
+git add (klasör ya da doküman adı)..............:	Indexleme işlemi. Klasör adı ile tüm verileri, dokuman adı ile sadece ilgili dokumanı commite hazır hale getirir
+	- [git add .]...........................:	Çoklu Indexleme işlemi. Aynı anda birden fazla dokümanı Indexlemek için
+git commit -m "açıklama metni oluşturuldu"......:	"açıklama metni oluşturuldu" ifadesini dahil ederek commit gerçekleştirildi
+git log.........................................:	LOG // İşlem gerçekleştirme bilgilerini verir.
+	- Commit................................:	commit c1cf4e3b8ecd144499afb5a4fac21a1843619aee (HEAD -> master)
+		- Hash..........................:	c1cf4e3b8ecd144499afb5a4fac21a1843619aee
+		- Branch (dal)..................:	(HEAD -> master)
+	- Kim yazdı.............................:	Author: İsmail Arıcıoğlu <ggl.issoline@gmail.com>
+	- Date (tarih)..........................:	Date:   Tue May 23 02:25:51 2023 +0300
+	- Açıklama metni........................:	git temelleri ders notları için ilk commitimi oluşturdum
