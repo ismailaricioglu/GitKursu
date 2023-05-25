@@ -1,4 +1,3 @@
-................................................................:	
 Hizaya sokma....................................................:	[git rebase master] ile yan dalda iken çalıştırıldığında "master" ve "yan dal" aynı düzleme taşınır.
 									Eğer daha öncesinde master ve yan dal merge (birleştirme) yapıldı ise 
 									rebase komutu ile tüm mergeler logdan kaldırılırlar ve yeni hiza sırası;
