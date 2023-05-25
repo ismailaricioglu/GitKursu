@@ -1,0 +1,6 @@
+................................................................:	
+- İndex'e göre..................................................:	[git diff] : İndex'e göre karşılaştırır
+- HEAD'e göre...................................................:	[git diff HEAD]
+- Commit'lere göre..............................................:	[git diff "sona yakın comit id" "başa yakın comit id"] ya da [git diff "sona yakın comit id" : "başa yakın comit id"]
+	- ÖRNEK : git diff 295c7f59e84aab7906f57c25476b16ab26c04b73 845e13eebfad6925037826c2f2dd81a52d773ce5
+- Branch'lere göre..............................................:	[git diff master yeniDal1]

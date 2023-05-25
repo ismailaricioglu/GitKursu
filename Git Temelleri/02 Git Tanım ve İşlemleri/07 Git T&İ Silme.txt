@@ -1,0 +1,7 @@
+- Commit Silme..................................................:	İlgil comite geri dönerek comit silme işlemi gerçekleşir
+	- Sadece commit.........................................:	[git reset "dönülecek comit id"] dönülecek comit id' den sonraki comit bilgileri silinir
+	- Tam silme / İçerik ile................................:	[git reset --hard "dönülecek comit id"] dönülecek comit id' den sonraki comit bilgileri ve içerik bilgileri silinir
+- Commit bizden silme...........................................:	[git revert "son görüntülenmeyecek comit id"] bazen ilgili commit'in bizim git içeriğinde görüntülenmesini istemeyiz. 
+									Çakışma olmaması için diğer yazarlara ait commit "LOG" bilgileri silmeden ve bizim commitlerimizde de dahil edilmeden işleme devam etmek isteriz.
+									Sırasıyla ilgili commitlrin id'leri sondan başa doğru kaldırılır. Bu tam bir silme değildir. 
+									Aynı zamanda yeni bir dal oluşturmaya gerek kalmadan Head bu dalda yeni bir commit id' si ile devam edebilir

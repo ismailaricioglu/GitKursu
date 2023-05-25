@@ -1,0 +1,8 @@
+................................................................:	
+- Commit edilmemiş dokümanlar...................................:	[git restore "dokümanAdı.uzantısı"] ile ilgili daldaki doküman içi değiştirilmiş veriler geri alnır
+- Commit edilmiş dokümanlar.....................................:
+	- Checkout..............................................:	[git checkout "commit id"] ile ilgili daldaki ilgili commit id' sine ait dokümanlar getirilir
+		- Head Detached.................................:	Head ilgili dalın gösterilen commit id' sindedir, ilgili dalın son (güncel) commit' inde değildir.
+		- Branch........................................:	İlgili dalın gösterilen commit id' sinde yeni bir dal oluşturulabilir. 
+									[git switch "yan_dal_adı"] ile olşturulan yeni dala gidebilir ve 
+									Head ile bu yan dalı gösterebilirim

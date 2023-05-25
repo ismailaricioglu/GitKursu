@@ -1,0 +1,45 @@
+........................................................:	
+• master (efendi/ana dal)
+• branch (dal)
+• head (kafa)
+• merge (birleştir)
+• fast forward (ileri sar)
+• merge conflict (çakışmayı birleştir)
+• stash (sakla)
+• pop (patlat)
+
+
+head (kafa).....................................................:	git içerisinde hangi commit içerisinde olduğumuzu gösterir
+• master (efendi/ana dal).......................................:	Ana yoldur
+• branch (dal)..................................................:	Ana yoldan çıkan yan dal(lar). 
+	- Listele...............................................:	[git branch] tüm dalları listeler
+	- Oluşturma.............................................:	[git branch "1._yan_dal_adı"] ile yeni bir yan dal olşturma işlemi. Head artık burayı göstermekte
+	- Dal değiştirme........................................:	[git switch "dalAdı"] herhangi bir daldan bir başka dala geçiş işlemi, Ör: [git switch "master"] ile master dalına geçiş yapılır, Head artık burayı göstermekte
+	- Birleştirme...........................................:	Dalların birleştirilmesi
+		- merge (birleştir).............................:	[git merge "yanDalAdı"] ilgili yan dalın üzerinde bulunduğu (head) ana dal ile birleştirilmesi işlemi
+		- Fast-forward (ileri-sar)......................:	Yan dalda iken ana daldan gelen dokümanlarda değişim yapmayarak;
+									yeni dokümanlar oluşturabilir, indexleyebilir, commit edebilir ve 
+									birleştirme işleminde sadece ana dala ilgili yan dal dokümanları aktarılarak birleştirme gerçekleşir
+		- merge conflict (çakışmayı birleştir)..........:	Bir kaç olasılık mevcut.
+			- Doküman silindiğinde..................:	Birleştirme yapılmaya çalışıldığında oluşan çakışma için ilgili çözüm seçildikten 
+									sonra [git add .] ve [git commit -m "çakışma çözüldü"] işlemleri gerçekleştirlir. 
+									Çözüm için 2 ihtimal var;
+				- 1. Çözüm......................:	Doküman silinir
+				- 2. Çözüm......................:	Doküman kaydedilir (saved)
+			- Satır silindiğinde....................:	<<<<<<< HEAD
+									master'da yazılan satır
+									=======
+									>>>>>>> yanDal
+									Yukarıda yanDal isimli dalda satır silinmiş durumdadır. Çözüm için 3 ihtimal var;
+				- 1. Çözüm......................:	"master'da yazılan satır" aynen kalır ve diğer uyaran açıklamaların tümü silinir ve kaydedilir
+				- 2. Çözüm......................:	"" satır silinir ve kaydedilir
+				- 3. Çözüm......................:	satıra yeni bir metin yazılır ve kaydedilir
+	- Sakla.................................................:	Doküman saklanması
+		- stash (saklama)...............................:	[git stash] ile ilgili daldaki tüm değiştirilmiş, oluşturulmuş dokümanlar saklanır
+			- Listeleme.............................:	[git stash list] ile saklanan tüm dokümanlar listelenir
+			- Liste Silme...........................:	[git stash clesar] ile saklanan tüm dokümanlar listeden silinir
+			- Yerleştirme...........................:	İlgili dokümen ya da dokümanlar stash'ten alınabilir. İki yöntem mevcuttur. Bunlar;
+				- 1. Yöntem Tümlü Yerleştirme...:	[git stash pop] tümünü, üzerinde bulunduğu branch'e yerleştirir ve Stash Listesini boşaltır.
+				- 2. Yöntem Seçimli Yerleştirme.:	
+					- Listeden kaldırarak...:	[git stash apply stash@{0}] index numarası ile saklanan doküman, üzerinde bulunduğu branch'e yerleştirir ve Stash Listesini boşaltır.
+					- Listeden kaldırmadan..:	[git stash apply] saklama listesine son eklenen doküman, üzerinde bulunduğu branch'e yerleştirir ve Stash Listesinden elemanı kaldırmaz.

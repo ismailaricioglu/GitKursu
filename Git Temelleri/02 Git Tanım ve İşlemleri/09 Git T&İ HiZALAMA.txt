@@ -1,0 +1,13 @@
+................................................................:	
+Hizaya sokma....................................................:	[git rebase master] ile yan dalda iken çalıştırıldığında "master" ve "yan dal" aynı düzleme taşınır.
+									Eğer daha öncesinde master ve yan dal merge (birleştirme) yapıldı ise 
+									rebase komutu ile tüm mergeler logdan kaldırılırlar ve yeni hiza sırası;
+									tüm master logları, sonra tüm yan dal logları olur.
+									Head yine yan dal üzerinde kalır.
+	- ÖNEMLİ................................................:	Proje log tarih bilgileri ve sıralama değişir.
+		- İlgili proje paylaşılmış ve başkaca insanlar tarafından kullanılmakta ise eğer;
+			> Tüm kullanıcılarına bilgi verilmelidir
+			> Karmaşaya sebep olabilir
+			> Dikkat edilmelidir
+		- İlgili proje sadece bir kişinin kullanımında ise eğer;
+			> Sorunsuz bir şekilde bu işlem gerçekleşebilir
