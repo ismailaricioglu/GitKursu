@@ -1,4 +1,4 @@
-git status......................................:	üzerinde durduğu klasörün git ile bağlantıl olup olmadığı bilgisini verir
+git status......................................:	üzerinde durduğu klasörün git ile bağlantılı olup olmadığı bilgisini verir
 
 git init........................................:	ÖNEMLİ - [herhangi bir yerde çalıştırmadan önce "git status" ile kontrol edilmelidir. 
 							Eğer mevcut konumda zaten çalışr durumda ise kesinlikle "git init" çalıştırılmamalıdır. Kafası karışabilir.] 

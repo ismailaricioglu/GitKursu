@@ -3,7 +3,7 @@ Git Terminal Kullanımı :
 - Temel komutlar ___
 
 - [git].........................................:	komut ve yardım bilgi listesi
-- [git --verion]................................:	versiyon bilgisi verir
+- [git --version]...............................:	versiyon bilgisi verir
 
 - ekran.........................................:	temel ekran işlemlri
 	- [Q]...................................:	ekranda bir komut istemi çıktısı taşar ise yön tuşları ile yukarı-aşağı gidilebilir ve "Q" tuşu ile çıkılabilir
@@ -16,11 +16,11 @@ Git Terminal Kullanımı :
 - [cd] (change directory).......................:	dizin hareket işlemleri
 	- [cd klasör/doküman]...................:	bulunduğu adresteki ilgili klasör/doküman getirir
 	- [cd ..]...............................:	ilgili adresin bir üst dizinini gider
-- [mkdir] (make directory)......................:	klasör/doküman yapıcı
-	- [mkdir klasör/doküman]................:	klasör/doküman oluşturur
+- [mkdir] (make directory)......................:	klasör yapıcı
+	- [mkdir yeniKlasör]....................:	yeniKlasör adında klasör oluşturur
 - [touch].......................................:	doküman yapıcı
 	- [touch not.txt].......................:	"not.txt" adında doküman oluşturur
-- [rm] (remove).................................:	doküman kaldır
+- [rm] (remove).................................:	doküman kaldırıcı
 	- rm not.txt............................:	"not.txt" adında dokümanı kaldırır
 - [rm -rf] (remove).............................:	klasör/doküman kaldır
 	- [rm -rf klasör veya doküman.txt]......:	"klasör veya doküman.txt" adında klasör veya dokümanı kaldırır
@@ -28,7 +28,9 @@ Git Terminal Kullanımı :
 - Kullanıcı Adı 
 	- Ekleme................................:	git config --global user.name 'ismail arıcıoğlu'
 	- Değiştirme............................:	git config --global --replace-all user.name 'İsmail Arıcıoğlu'
+	- Okuma.................................:	git config --global user.name
 
 - Kullanıcı Email
 	- Ekleme................................:	git config --global user.email 'vesayir@vesayir.com'
 	- Değiştirme............................:	git config --global --replace-all user.email 'ggl.issoline@gmail.com'
+	- Okuma.................................:	git config --global user.email

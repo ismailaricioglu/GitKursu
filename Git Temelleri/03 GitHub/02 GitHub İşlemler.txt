@@ -1,0 +1,64 @@
+................................................................:	
+- Uzaktan Erişimli Repo İşlemleri...............................:	
+	- İlk defa yerleştirir iken.............................:	[git push -u origin master]
+	- Tekrarlı yerleştirme..................................:	
+		- url belirtmeden...............................:	[git push origin "herhangi bir branch"]
+		- Branch  belirtmeden...........................:	[git push origin]
+		- Origin belirtmeden............................:	[git push]
+	- Birleştirme...........................................:
+		- GitHub ile;
+			- İstek oluşturma.......................:	"Compare & Pull Request" ile burada ilgili dal ile master arasındaki birleştirme işlemi isteği oluşturulabilir
+									"Creat pull request" ile istek yazılan bilgilendirme metni yöneticiye iletilir
+			- Görüntüleme...........................:	Gelen istek "Pull request" sekmesi altında görüntülenir
+			- Kabul Etme............................:	Birleştirme işlemi için sorun yok ya da benzeri bir durum içinde ise "Merge pull request" ile birleştirme yapılır
+- Güncelleme....................................................:	GitHub ve Git Bash (local) arasındaki farklılıkların giderilme işlemi
+	- Git Bash Local ile;
+		- Değiştirmeden.................................:	[git fetch origin master] sadece değişiklikleri getirir, görüntüleme/karşılaştırma imkanı sunar
+			- Localde...............................:	[git log] (git bash) yereldeki işlemlerin bilgisini verir
+			- GitHubda..............................:	[git status] (git bash) yerel ve (GitHub) ortak genel değşimlerin bilgisini verir
+									"Your branch is behind 'origin/master' by 1 commits, and can be fast-forwarded.";
+									(master) ilgili dal 1 commit geride ve hızlı-ileri-sarma yapabilirsin bilgisi geliyor
+									"(use "git pull" to update your local branch)";
+									güncellemek için pull yapabilirsin diyor
+				- Head..........................:	[git checkout origin/master] ile (GitHub) uzak erişimli branch commitine gidilir
+									ÖNEMLİ <burada gidilen commit (origin/master) localde kayıtlı son halidir>
+
+									Note: switching to 'origin/master'.
+
+									You are in 'detached HEAD' state. You can look around, make experimental
+									changes and commit them, and you can discard any commits you make in this
+									state without impacting any branches by switching back to a branch.
+								
+									If you want to create a new branch to retain commits you create, you may
+									do so (now or later) by using -c with the switch command. Example:
+
+									  git switch -c <new-branch-name>
+
+									Or undo this operation with:
+
+									  git switch -
+
+									Turn off this advice by setting config variable advice.detachedHead to false
+
+									HEAD is now at 43bcc3a Merge pull request #1 from ismailaricioglu/feat
+
+									YUKARIDA ÖZETLE; burada HEAD koptu, buraya bakabilir, değişiklik yapabilirsin. 
+									Değişiklileri saklamak ister isen yeni bir branch aç ya da bir değişiklik yapma ve geri gel.
+		- Değiştirerek;
+			- Localde...............................:	[git pull origin master] ile GitHub üzerinden gelen tüm son işlem/durum bilgileri yereldede gerçekleştiriliyor
+	- GitHub Uazk Erişim ile;
+		- Değiştirme....................................:	[git push origin master] ile localdeki tüm değişiklikleri GitHub'a göderildi
+- Kopyalama (Clone).............................................:	[git clone https://github.com/ismailaricioglu/GitHubTest.git] url ile erişilen repoyu bilgisayardaki konuma bir kopyası ile indirir
+	- ÖNEMLi................................................:	Sadece repo içeriği kopyalanmış olur. GitHub üzerindeki orjinal projeye müdahale edilemez.
+									İlgili reponun tüm işlemleri (log, branch, vs) görüntülenebilir.
+									Sonrasında orjinal projenin değişiklikleri (pull, fetch) ile alınabilir
+- Çatallama (Fork)..............................................:	
+	- Kopyalama.................................................:	GitHub üzerinden ilgili projenin reposunu "Fork" ile kendi hesabına bir kopyasını alabilir,
+		- Bunu Locale Clone'layabilir,
+		- Localdeki herhengi bir değişikliği kendi GitHub hesabına yükleyebilir,
+		- Orjinal projeye ek olarak yapılan bir değişiklik "contribute" üzerinden "compare" ile (teklif/fikir) istek oluşturulup sunulabilir
+		- Orjinal proje sahibi;
+			- Onaylayabilir
+			- Cevap yazabilir
+			- (confirm merge) onaylayarak birleştirebilir
+			- İstek için yapılan görüşmeyi kapatabilir (close pull request)

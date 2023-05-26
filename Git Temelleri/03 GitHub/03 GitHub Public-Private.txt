@@ -1,0 +1,11 @@
+................................................................:	
+Public..........................................................:	"Fork" ile işlemler gerçekleştirilir
+Private.........................................................:	Bir çok kişiye orjinal projeye için doğrudan erişim hakkı verilebilir
+	- Orjinal Projeye Dahil Etme;
+		- Settings (ayarlar)
+			- Collaborators (iş birlikçiler)........:	- "Ad people" üzerinden kişileri aratarak bulduğumuz kişiye davetiye gönderilebilir
+		- Kabul Etme....................................:	Kişi maili üzerinden açılan sayfada "Accept invitation" diyerek orjinal projeye dahil olabilir
+			- Haklar................................:	
+				- Orjinal Projeye "push" ile doküman gönderebilir
+				- Projede yeni dallar (branch) ekleyebilir
+				- Geliştirme yapabilir

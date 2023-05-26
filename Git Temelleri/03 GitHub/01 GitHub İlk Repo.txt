@@ -1,0 +1,41 @@
+ ................................................................:	
+Temel işlemler..................................................:	
+	1- Localde..............................................:	Genel repo işlemleri;
+		- Klasör yeni oluşturuluyor ise;
+			- Klasör oluşturma [mkdir klasörAdı]
+			- Klasöre girme [cd klasörAdı]
+		- Klasör zaten mevcut ise;
+			- Git bağlantı kontrolü [git status]
+		- Git bağlantı yok ise;
+			- Git bağlantı oluşturma [git init]
+		- Doküman oluştırma [touch dok.txt]
+		- Git İndexe ekleme [git add .]
+		- Git Commitleme [git commit -m "commit açıklama metni"]
+		- Kontrol etme [git log]
+	2- GitHubta.............................................:	İnternet repo işlemleri;
+		New repostory sayfasında iken;
+		- Repostory name (zorunlu)......................:
+			- GitHub hesabında mevcut ve aynı ismim olamaması şartı ile
+			- İstenir ise local repo ile aynı
+			- İstenir ise local repo ile farklı
+		- Description (isteğe bağlı)....................:	Tanım bilgisi, kısa öz açıklama
+		- Görünüm (zorunlu).............................:	Github üzerinde kimler görebilir
+			- Public (açık görünüm)
+			- Private (özel görünüm) 
+		- README.md (isteğe bağlı)......................:	Uzun tanıtım ve açıklama
+		- .gitignor (isteğe bağlı)......................:	Yüklenmeyecek format dosyaları listeleri
+		- Licance (isteğe bağlı)........................:	Lisans bilgileri
+		Creating ile oluşturulur
+	3- Bağlantı.............................................:	Local ile İnternet arasında repoların bağlantı işlemleri;
+		Gelen pencerede içerisinde;
+		- Uzak Repo.....................................:	Ulaşım adresi (url: https://github.com/kullanıcıAdı/GitHubTest.git)
+		- Örnek Komut(lar) & Yönlendirme(ler)...........:
+			- İşlem komutları
+			- İşlem sırası
+		Localde Git Bash ile;
+		- Kullanıcı.....................................:	Localde belirtilen kullanıcının E-mail adresi ile GitHub'a ekleyen bilgisi yerleştirilmekte
+		- Uzaktan Erişimli Repo Tanımı..................:	"origin" mecburi değil ve fakat endüstride bu kullanım kabul ediliyor,
+									origin bir keys/value işlem matğı ile çalışmakta ve value ile url belirtilmekte
+									[git remote add origin https://github.com/kullanıcıAdı/GitHubTest.git]
+			- Erişim Adı Öğrenme....................:	[git remote] ile origin bilgisi gelir, aslında bir nevi etiket okumak gibi
+				- Branch Adı Öğrenme............:	[git branch -r] ile origin/master, origin/yanDal bilgisi gelir
